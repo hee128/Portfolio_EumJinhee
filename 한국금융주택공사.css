@@ -3,7 +3,7 @@
     padding: 0;
 }
 .container {
-    width: 1400px;
+    width: 100%
 }
 a {
     display: block;
@@ -259,3 +259,4 @@ header {
 
 
     }
+
