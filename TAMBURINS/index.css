@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+body {
+     background-color: #eee;
+}
+/* -----------------header-------------------- */
+header {
+    /* background-color: lightslategrey; */
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100% ;
+}
+.logo {
+    /* background-color: lightblue; */
+    font-size: 22px;
+    color: #fff;
+}
+.menu ul {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.menu li {
+    padding: 10px;
+    margin: 5px ;
+}
+.menu li:hover {
+    text-decoration: underline #fff 1px;
+} 
+.icon ul {
+    /* background-color: lightcoral; */
+    display: flex;
+    position:fixed;
+    right: 100px;
+    font-size: 26px;
+}
+.icon li {
+    padding: 10px 18px;
+}
+.search {
+    border: 1px solid;
+    width: 220px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.search input {
+    font-size: 14px;
+    color: rgb(247, 247, 247);
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 10px;
+}
+
+/* -----------------main----------------- */
+
+.main_1 {
+    display: flex;
+}
+.main_1 img {
+    width: 100%;
+}
+.main_2 {
+    margin-top: -30px;
+    display: flex;
+}
+.main_2 img {
+    width: 100%;
+}
+.main_1, .main_2 h3 {
+    /* color: #fff; */
+}
+.main_t a {
+    color: #fff;
+    position: relative;
+    top: -40px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/* ------------footer---------- */
+footer {
+    display: flex;
+   
+}
+footer h4 {
+    margin-bottom: 50px;
+}
+footer ul {
+    font-size: 14px;
+    color: #333;
+}
+footer li {
+   padding: 16px 0px;
+}
+footer a{
+    color: #555;
+    font-size: 12px;
+}
+
+footer div {
+    /* background-color: lightblue; */
+    display: flex;
+    padding: 20px 50px;
+}
+span {
+    font-weight: 900;
+    color: #333;
+}
