@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1400px;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* ----header------------ */
+header {
+    background-color:white;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.left {
+    margin-top: 16px;
+    margin-left: 40px;
+    color: rgb(41, 61, 128);
+}
+.left:hover {
+    cursor: pointer;
+}
+
+.up ul {
+    display: flex;
+}
+.up li {
+    padding: 10px;
+}
+.up li a {
+    color:  rgb(36, 88, 230);
+}
+.btn {
+    padding: 4px 16px;
+    border: 1px gray solid;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+}
+.down {
+    display: flex;
+    justify-content: space-between;
+}
+.down ul {
+    display: flex;
+    font-size: 18px;
+}
+.down li {
+    /* background-color: lightblue; */
+    padding: 10px 20px;
+    padding-bottom: 14px;
+    margin: 0px 10px;
+}
+.down li:hover {
+    border-bottom: 3px solid  rgb(36, 88, 230);
+}
+.down li a {
+    color: black;
+    font-weight: 800;
+}
+.down li a:hover {
+    color:  rgb(36, 88, 230);
+    cursor: pointer;
+}
+.fa-solid {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* -------------main----------- */
+main {
+    background-color: aliceblue;
+    height: 1000px;
+    
+}
+main h2 {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(20, 31, 131);
+}
+.global {
+    color: rgb(20, 31, 131);
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card div {
+    background-color: white;
+    width: 320px;
+    height: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.05);
+}
+.card div:hover {
+    transform: translateY(-30px);
+    cursor: pointer;
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.4);
+}
+span {
+    color: black;
+    font-weight: 600;
+}
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color: rgb(36, 88, 230);
+}
+.card p {
+    margin-bottom: 38px;
+    font-size: 20px;
+    color: gray;
+}
+.card h4 {
+    margin-bottom: 16px;
+    color: rgb(36, 88, 230);
+}
+.card img {
+    margin-top: 30px;
+}
+
+   @media screen and (max-width:768px){
+    main {
+    background-color: aliceblue;
+    height: 1500px;
+    }
+    main h2 {
+        text-align: start;
+        margin-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 26px;
+    font-weight: 500;
+    }
+    .card{
+        display: inline;
+        align-items:flex-start ;
+    }
+    .card div {
+        text-align: center;
+         margin-bottom: 40px;
+         margin-left: 50px;
+            width: 400px;
+    height: 270px;
+    padding: 50px 30px;
+    }
+    span {
+    color: black;
+    font-weight: 600;
+}
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: rgb(36, 88, 230);
+}
+.card p {
+    margin-bottom: 38px;
+    font-size: 16px;
+    color: gray;
+}
+.card h4 {
+    margin-bottom: 16px;
+    color: rgb(36, 88, 230);
+}
+.card img {
+    width: 200px;
+    margin-top: 10px;
+}
+
+header {
+    background-color:white;
+    height: 80px;
+    display: inline;
+    padding: 20px;
+    align-items: flex-start;
+}
+.left {
+    margin-top: 10px;
+    margin-left: 40px;
+    color: rgb(41, 61, 128);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.left:hover {
+    cursor: pointer;
+}
+.right {
+    display: flex;
+    justify-content: start;
+    padding: 10px 30px;
+}
+.up ul {
+    display: inline;
+    align-items: flex-start;
+    font-size: 18px;
+}
+.up li {
+    padding: 10px;
+}
+.up li a {
+    color:  rgb(36, 88, 230);
+}
+.btn {
+    padding: 2px 10px;
+    border: 1px gray solid;
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.down {
+    display:flex;;
+   justify-content: flex-start;
+}
+.down ul {
+    display: inline;
+    font-size: 18px;
+}
+.down li {
+    /* background-color: lightblue; */
+    padding: 8px 10px;
+    padding-bottom: 14px;
+    margin: 0px 10px;
+}
+.down li:hover {
+    border-bottom: 3px solid  rgb(36, 88, 230);
+}
+.down li a {
+    color: black;
+    font-weight: 800;
+}
+.down li a:hover {
+    color:  rgb(36, 88, 230);
+    cursor: pointer;
+}
+.fa-solid {
+    padding: 5px;
+    cursor: pointer;
+    font-size:18px;
+}
+
+
+
+
+
+    }
