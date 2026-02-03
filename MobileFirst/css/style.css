@@ -7,7 +7,7 @@ a {
 #wrap {
     margin: 0a auto;
     width:100%;
-    max-width: 1200px;
+
 }
 /* main {
     border: 1px solid brown;
@@ -87,6 +87,9 @@ nav.is-open li a {
  }
 
  /* slider */
+ main{
+  width: 100%;
+ }
  .slider {
     margin-top: 80px;
  }
@@ -302,4 +305,5 @@ nav.is-open li a {
 
 
   }
+
 
