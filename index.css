@@ -6,6 +6,7 @@ body {
   width: 100%;
   background-color: black;
   color: #fff;
+  font-family: 'Interop';
 }
 ul {
   list-style: none;
@@ -14,8 +15,16 @@ a {
   display: block;
   text-decoration: none;
   color: #fff;
+  font-family: 'Interop';
 }
-
+/* -----------------font------------ */
+@font-face {
+    font-family: 'Interop';
+    src: url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff2') format('woff2'),
+         url('https://raw.githubusercontent.com/payw-org/Interop/main/web/fonts/Interop-Regular.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
 /* ---------------------main--------------- */
 .main {
   height: 100vh;
@@ -36,13 +45,13 @@ a {
 }
 .main_btn li {
   font-size: 18px;
-  border: 3px solid #eee;
+  border: 2px solid #eee;
   background-color: #525252;
   padding: 8px 16px;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .main_btn li:hover {
-  border: 3px solid #eee;
+  border: 2px solid #eee;
   background-color: #b3b3b3;
 }
 .main_btn li:hover a {
@@ -72,7 +81,7 @@ a {
 .main_link li {
   font-size: 20px;
   border: 3px solid #ccc;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 6px 20px;
 }
 .main_link li:hover {
@@ -83,34 +92,88 @@ a {
   color: black;
 }
 
+.x_btn {
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  padding: 10px 15px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.x_btn:hover {
+  cursor: pointer;
+  color:#fff;
+  background-color:#525252;
+}
+
+.about {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 140px;
+  left: 400px;
+  width: 1100px;
+  height: 600px;
+  color: black;
+  padding: 40px;
+}
+.open {
+  display: block;
+}
+
+.about ul {
+  width: 300px;
+  position: absolute;  
+  top: 160px;
+  right: 320px;
+  /* background-color: lightblue; */
+}
+.about li {
+  text-align: start;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+.about h2 {
+  font-size: 36px;
+}
+.about h3 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.about p {
+  width: 1000px;
+  text-align: start;
+  font-size: 18px;
+  line-height: 2.6rem;
+}
+.about img {
+  width: 170px;
+  position: absolute;
+  top: 110px;
+  left: 330px;
+}
+.about_t {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+
+
 /* ----------page1------------- */
 .page1 {
   height: 100vh;
   text-align: center;
 }
 
-.toggleBtn1, .toggleBtn2 {
-  /* border: 1px solid white; */
-  background-color: #fff;
-  padding: 3px 5px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.toggleBtn1:hover ,.toggleBtn2:hover
-{
-    color: #fff;
-    background-color: black;
-    border: 1px solid #fff;
-}
 .p1_t {
-  padding-top: 30px;
+  padding-top: 30px;  
 }
 .p1_t h1 {
   font-size: 50px;
 }
 .p1_box {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .p1_box ul {
   /* width: 80%; */
@@ -121,11 +184,11 @@ a {
   cursor: pointer;
 }
 .p1_box li:hover {
-  border: 5px solid;
+  border: 3px solid;
 }
 .p1_box li {
-  background-color: #6d6d6d41;
-  border: 2px solid #ccc;
+  /* background-color: #6d6d6d41; */
+  border: 2px solid #333;
   border-radius: 10px;
   padding: 10px;
   margin: 0 40px;
@@ -134,40 +197,27 @@ a {
 }
 .p1_box img {
   width: 360px;
+  height: 200px;
+  margin: 40px 0px;
 }
 .p1_box h3 {
   margin-bottom: 8px;
   text-align: start;
 }
 
-/* /////////// p1 */
-.pic2 {
-  display: block;
+.p1_box p {
+  text-align: start;
+  padding: 10px;
 }
-.pic1 {
-  display: none;
+.pic_t h4 {
+  background-color: #fff;
+  color: black;
+  width: 120px;
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border-radius: 5px;
 }
-.pic2.active {
-  display: none;
-}
-.pic1.active {
-  display: block;
-}
-/* //////////p2 */
-.pic3 {
-  display: block;
-  padding-top: 100px;
-}
-.pic4 {
-  display: none;
-}
-.pic3.active {
-  display: none;
-}
-.pic4.active {
-  display: block;
-}
-
 /* ----------page2----------------- */
 .page2 {
   height: 100vh;
@@ -221,3 +271,72 @@ span {
 .p2_t a {
   border-bottom: 1px solid #bbbbbb;
 }
+
+
+/* -----------------p3----------- */
+.page3 {
+  height: 100vh;
+  text-align: center;
+}
+.page3 img {
+  width: 180px;
+}
+.page3 nav {
+  margin-top: 70px;
+  /* background-color: lightblue; */
+  width: 330px;
+}
+.page3 li {
+  margin-bottom: 25px;
+  text-decoration: underline;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 2.2rem;
+}
+
+
+
+/* ======================= 반응형 */
+
+@media screen and (max-width: 768px ){
+  .main_btn {
+  top: 0px;
+}
+  .main_btn ul {
+  display: block;
+  width: 100%;
+}
+.main_btn li {
+  border: 1px solid #eee;
+  border-radius: 0px;
+  font-size: 16px;
+  text-align: center;
+}
+.main_t {
+  padding: 30px;
+}
+.main_t h1 {
+  font-size: 40px;
+}
+.main_t h2 {
+  font-size: 20px;
+}
+.about .open {
+  display: none;
+  background-color: #fff;
+  width: 100px;
+  height: 600px;
+  color: black;
+  padding: 40px;
+}
+
+/* ================page1 */
+
+
+
+
+
+
+}
+
