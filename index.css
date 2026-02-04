@@ -124,7 +124,7 @@ a {
 
 .about ul {
   width: 300px;
-  position: absolute;  
+  position: absolute; 
   top: 160px;
   right: 320px;
   /* background-color: lightblue; */
@@ -304,10 +304,11 @@ span {
   top: 0px;
 }
   .main_btn ul {
-  display: block;
+  /* display: block; */
   width: 100%;
 }
 .main_btn li {
+  width: 100%;
   border: 1px solid #eee;
   border-radius: 0px;
   font-size: 16px;
@@ -322,16 +323,72 @@ span {
 .main_t h2 {
   font-size: 20px;
 }
-.about .open {
-  display: none;
-  background-color: #fff;
-  width: 100px;
-  height: 600px;
-  color: black;
-  padding: 40px;
-}
+
 
 /* ================page1 */
+.p1_t {
+  padding-top: 70px;  
+}
+.p1_t h1 {
+  font-size: 30px;
+}
+.p1_box {
+  margin-top: 0px;
+}
+.p1_box ul {
+  display: inline-block;
+}
+.p1_box li {
+  margin: 30px 40px;
+  height: 500px;
+  
+}
+/* ==============page2 */
+.p2_t {
+  padding-top: 70px;  
+}
+.page2 h1 {
+  font-size: 30px;
+}
+.p2_icon img {
+  width: 40px;
+}
+.p2_box {
+  height: 500px;
+  width: 600px;
+}
+.p2_icon {
+  padding-left: 0px;
+}
+.p2_icon ul {
+  display: flex;
+  flex-flow:wrap;
+  padding-top: 60px;
+}
+.p2_icon li {
+  width: 100%;
+  padding: 10px;
+}
+.p2_t {
+  width: 400px;
+}
+.p2_t li {
+  font-size: 14px;
+}
+
+/* ===============page3 */
+
+.page3 img {
+  width: 150px;
+}
+.page3 li {
+  margin-bottom: 25px;
+  text-decoration: underline;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 2.2rem;
+}
 
 
 
@@ -339,4 +396,5 @@ span {
 
 
 }
+
 
