@@ -7,7 +7,7 @@ a {
 #wrap {
     margin: 0a auto;
     width:100%;
-
+    /* max-width: 1200px; */
 }
 /* main {
     border: 1px solid brown;
@@ -189,6 +189,7 @@ nav.is-open li a {
 
   /* 태블릿 최소 768px 이상일 때 적용 */
   @media (min-width: 768px) {
+  
     .promo-list {
         display: flex;
         /* wrap: 자식 요소가 부모 컨테이너의 
@@ -305,5 +306,6 @@ nav.is-open li a {
 
 
   }
+
 
 
